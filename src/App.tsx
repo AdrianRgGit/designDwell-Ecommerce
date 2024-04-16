@@ -1,5 +1,7 @@
-function App() {
-  return <h1 className="underlin text-3xl font-bold">Hello world!</h1>;
-}
+import React from "react";
+
+const App = () => {
+  return <h1 className="text-2xl text-blue underline">Hello world!</h1>;
+};
 
 export default App;
