@@ -1,7 +1,7 @@
 import React from "react";
 
 const App = () => {
-  return <h1 className="text-2xl text-blue underline">Hello world!</h1>;
+  return <h1 className="text-blue text-2xl underline">Hello world!</h1>;
 };
 
 export default App;

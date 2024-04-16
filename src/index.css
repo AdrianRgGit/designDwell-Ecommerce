@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Importa la fuente */
+@font-face {
+ font-family: 'Coco Gothic Regular';
+ src: url('../fonts/coco-gothic.regular.ttf') format('truetype');
+}
+
+@font-face {
+ font-family: 'Coco Gothic Bold';
+ src: url('../fonts/coco-gothic.bold.ttf') format('truetype');
+}
+
+@font-face {
+ font-family: 'Coco Gothic Italic';
+ src: url('../fonts/coco-gothic.alternate-ultlt-ita.ttf') format('truetype');
+}
+
+@font-face {
+ font-family: 'Coco Gothic Light';
+ src: url('../fonts/coco-gothic.ultralight.ttf') format('truetype');
+}
+
+:root {
+  font-family: "Coco Gothic regular", system-ui;
+}
