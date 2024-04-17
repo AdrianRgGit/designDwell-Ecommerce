@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Importa la fuente */
+/* NOTE: Importar las fuentes */
 @font-face {
  font-family: 'Coco Gothic Regular';
  src: url('../fonts/coco-gothic.regular.ttf') format('truetype');
