@@ -9,6 +9,7 @@ export default {
         cream: "#EADBC8",
         gold: "#FFC94A",
         blue: "#102C57",
+        gray: "#33363F",
       },
     },
     fontFamily: {
