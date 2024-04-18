@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex items-center justify-between bg-white/80 p-8">
+    <header className="sticky top-0 z-10 flex items-center justify-between bg-white bg-opacity-80 p-8">
       <a
         href="mailto:adrianramirezgalera@gmail.com"
         className="flex items-center gap-x-4 border-b border-white transition-colors duration-200 ease-in hover:border-black"
