@@ -6,7 +6,7 @@ const ButtonInput: FC<ButtonInputProps> = ({ text, type, onClick }) => {
     <button
       type={type}
       onClick={onClick}
-      className="w-full border p-2 transition-colors duration-200 hover:bg-gold"
+      className="w-full border p-2 transition duration-200 hover:font-bold"
     >
       {text}
     </button>

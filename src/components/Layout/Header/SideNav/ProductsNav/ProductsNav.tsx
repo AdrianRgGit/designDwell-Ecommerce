@@ -9,7 +9,7 @@ const ProductsNav: FC<MainNavProps> = ({ toggleProductsNav }) => {
         <p className="text-lg">OUR PRODUCTS</p>
         <a
           href="#"
-          className="text-left font-coco-gothic-bold transition-colors duration-200 hover:text-gold"
+          className="text-left font-bold transition-colors duration-200 hover:text-gold"
         >
           All
         </a>

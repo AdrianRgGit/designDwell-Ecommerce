@@ -7,7 +7,6 @@ const Auth = () => {
 
   const toggleFormView = () => {
     setShowForm(!showForm);
-    console.log(showForm);
   };
 
   return (

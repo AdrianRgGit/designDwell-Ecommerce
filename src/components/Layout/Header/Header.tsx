@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-10 flex items-center justify-between bg-white/80 p-8">
+    <header className="absolute top-0 z-10 flex w-full items-center justify-between bg-white/90 p-8">
       <a
         href="mailto:adrianramirezgalera@gmail.com"
         className="flex items-center gap-x-4 border-b border-transparent transition-colors duration-200 ease-in hover:border-black"
@@ -19,7 +19,7 @@ const Header = () => {
       </a>
 
       <section>
-        <a href="/" className="cursor-pointer">
+        <a href="/">
           <strong className="font-coco-gothic-bold text-3xl">
             DESIGN DWELL
           </strong>
@@ -27,9 +27,15 @@ const Header = () => {
       </section>
 
       <section className="flex items-center gap-x-8">
-        <Briefcase className="cursor-pointer transition-colors duration-200 hover:text-gold" />
-        <User className="cursor-pointer transition-colors duration-200 hover:text-gold" />
-        <Search className="cursor-pointer transition-colors duration-200 hover:text-gold" />
+        <Briefcase className="transition-colors duration-200 hover:text-gold" />
+
+        <a href="/profile">
+          <User className="transition-colors duration-200 hover:text-gold" />
+        </a>
+
+        <a href="#">
+          <Search className="transition-colors duration-200 hover:text-gold" />
+        </a>
 
         <Menu
           onClick={toggleDrawer(true)}

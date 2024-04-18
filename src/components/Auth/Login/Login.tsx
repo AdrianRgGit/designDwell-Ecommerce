@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { AuthProps } from "../../../types/authTypes";
-import { TextField } from "@mui/material";
 import TextFieldInput from "../../Inputs/TextFieldInput/TextFieldInput";
 import ButtonInput from "../../Inputs/ButtonInput/ButtonInput";
 
