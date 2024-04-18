@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { MainNavProps } from "../../../../../types/headerTypes";
+import { ArrowLeft } from "lucide-react";
 
 const ProductsNav: FC<MainNavProps> = ({ toggleProductsNav }) => {
   return (
@@ -40,9 +41,10 @@ const ProductsNav: FC<MainNavProps> = ({ toggleProductsNav }) => {
 
       <button
         onClick={toggleProductsNav}
-        className="text-left transition-colors duration-200 hover:text-gold"
+        className="flex items-center gap-x-2 text-left transition-colors duration-200 hover:text-gold"
       >
-        BACK
+        <ArrowLeft />
+        <span className="mt-1">BACK</span>
       </button>
     </>
   );

@@ -39,7 +39,7 @@ const MainNav: React.FC<MainNavProps> = ({ toggleProductsNav }) => {
 
       <section className="flex flex-col gap-y-2 text-sm">
         <a
-          href="/login"
+          href="/auth"
           className="transition-colors duration-200 hover:text-gold"
         >
           Log in

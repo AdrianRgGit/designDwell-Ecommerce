@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./components/Home/Home";
-import Login from "./components/Auth/Login/Login";
 import ErrorPage from "./components/Error/ErrorPage/ErrorPage";
 import NotFoundPage from "./components/Error/NotFoundPage/NotFoundPage";
+import Auth from "./components/Auth/Auth";
 
 const routes = createBrowserRouter([
   {
@@ -11,8 +11,8 @@ const routes = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/login",
-    element: <Login />,
+    path: "/auth",
+    element: <Auth />,
     errorElement: <ErrorPage />,
   },
 
