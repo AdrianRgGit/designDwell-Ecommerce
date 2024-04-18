@@ -17,6 +17,8 @@ export default {
       "coco-gothic-bold": ["Coco Gothic Bold", "sans-serif"],
       "coco-gothic-italic": ["Coco Gothic Italic", "sans-serif"],
       "coco-gothic-light": ["Coco Gothic Light", "sans-serif"],
+
+      "inter": ["Inter", "sans-serif"],
     },
   },
   plugins: [],

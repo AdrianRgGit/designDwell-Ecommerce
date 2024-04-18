@@ -19,9 +19,11 @@ const Header = () => {
       </a>
 
       <section>
-        <strong className="cursor-default font-coco-gothic-bold text-3xl">
-          DESIGN DWELL
-        </strong>
+        <a href="/" className="cursor-pointer">
+          <strong className="font-coco-gothic-bold text-3xl">
+            DESIGN DWELL
+          </strong>
+        </a>
       </section>
 
       <section className="flex items-center gap-x-8">
