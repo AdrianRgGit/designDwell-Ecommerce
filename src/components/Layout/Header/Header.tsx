@@ -1,26 +1,40 @@
-import React from "react";
-import { CiMenuBurger, CiUser } from "react-icons/ci";
-import { FaMagnifyingGlass } from "react-icons/fa6";
-import { FiPhone } from "react-icons/fi";
-import { IoBagOutline } from "react-icons/io5";
+import { Briefcase, Menu, Search, User } from "lucide-react";
+import { useState } from "react";
+import SideNav from "./SideNav/SideNav";
 
 const Header = () => {
+  const [openDrawer, setOpenDrawer] = useState(false);
+
+  const toggleDrawer = (newOpen: boolean) => () => {
+    setOpenDrawer(newOpen);
+  };
+
   return (
     <header className="flex items-center justify-between bg-white/80 p-8">
-      <section className="flex items-center gap-x-4">
-        <FiPhone size={24} />
-        <p>Contact with us</p>
-      </section>
+      <a
+        href="mailto:adrianramirezgalera@gmail.com"
+        className="flex items-center gap-x-4 border-b border-white transition-colors duration-200 ease-in hover:border-black"
+      >
+        Contact with us
+      </a>
 
       <section>
-        <strong className="font-coco-gothic-bold text-3xl">DESIGN DWELL</strong>
+        <strong className="cursor-default font-coco-gothic-bold text-3xl">
+          DESIGN DWELL
+        </strong>
       </section>
 
-      <section className="flex gap-x-8 items-center">
-        <IoBagOutline size={24} />
-        <CiUser size={24} />
-        <FaMagnifyingGlass size={24} />
-        <CiMenuBurger size={24} />
+      <section className="flex items-center gap-x-8">
+        <Briefcase className="cursor-pointer transition-colors duration-200 hover:text-gold" />
+        <User className="cursor-pointer transition-colors duration-200 hover:text-gold" />
+        <Search className="cursor-pointer transition-colors duration-200 hover:text-gold" />
+
+        <Menu
+          onClick={toggleDrawer(true)}
+          className="cursor-pointer transition-colors duration-200 hover:text-gold"
+        />
+
+        <SideNav openDrawer={openDrawer} toggleDrawer={toggleDrawer} />
       </section>
     </header>
   );
