@@ -12,13 +12,14 @@ const Register: FC<AuthProps> = ({ toggleFormView }) => {
         <TextFieldInput label="Email" type="email" required grow />
         <TextFieldInput label="Password" type="password" required grow />
 
-        <ButtonInput text="CREATE ACCOUNT" type="submit" />
+        <ButtonInput text="CREATE ACCOUNT" type="submit" grow />
       </form>
 
       <span className="mt-12">
         <ButtonInput
           text="ALREADY A MEMBER?"
           type="button"
+          grow
           onClick={toggleFormView}
         />
       </span>

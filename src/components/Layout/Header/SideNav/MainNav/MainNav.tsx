@@ -44,9 +44,6 @@ const MainNav: React.FC<MainNavProps> = ({ toggleProductsNav }) => {
         >
           Log in
         </a>
-        <a href="#" className="transition-colors duration-200 hover:text-gold">
-          My orders
-        </a>
       </section>
     </>
   );

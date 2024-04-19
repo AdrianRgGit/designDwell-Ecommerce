@@ -8,5 +8,14 @@ export interface TextFieldInputProps {
 export interface ButtonInputProps {
   text: string;
   type: "submit" | "button" | "reset" | undefined;
+  grow?: boolean;
+  onClick?: () => void;
+}
+
+export interface ButtonProfileInputProps {
+  text: string;
+  type: "submit" | "button" | "reset" | undefined;
+  label?: string;
+  first?: boolean;
   onClick?: () => void;
 }

@@ -27,7 +27,9 @@ const Header = () => {
       </section>
 
       <section className="flex items-center gap-x-8">
-        <Briefcase className="transition-colors duration-200 hover:text-gold" />
+        <a href="#">
+          <Briefcase className="transition-colors duration-200 hover:text-gold" />
+        </a>
 
         <a href="/profile">
           <User className="transition-colors duration-200 hover:text-gold" />

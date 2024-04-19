@@ -10,7 +10,7 @@ const Login: FC<AuthProps> = ({ toggleFormView }) => {
         <TextFieldInput label="Email" type="email" required grow />
         <TextFieldInput label="Password" type="password" required grow />
 
-        <ButtonInput text="LOG IN" type="submit" />
+        <ButtonInput text="LOG IN" type="submit" grow/>
       </form>
       <a href="#" className="transition-colors duration-200 hover:text-gold">
         Forgot password?
@@ -20,6 +20,7 @@ const Login: FC<AuthProps> = ({ toggleFormView }) => {
         <ButtonInput
           text="NEW CUSTOMER?"
           type="button"
+          grow
           onClick={toggleFormView}
         />
       </span>
