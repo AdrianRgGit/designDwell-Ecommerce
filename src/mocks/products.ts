@@ -1,7 +1,7 @@
 const products = [
   {
     id: "12f6392f-980e-4936-990c-5d180205cd0a",
-    image: "/public/images/imagesTestProducts/imgTest1.webp",
+    image: "/images/imagesTestProducts/imgTest1.webp",
     name: "Stool",
     category: ["furniture", "chair"],
     price: 49.99,
@@ -11,7 +11,7 @@ const products = [
   },
   {
     id: "1ae02b44-5b29-4b78-bc17-4f8d3326e13a",
-    image: "/public/images/imagesTestProducts/imgTest2.webp",
+    image: "/images/imagesTestProducts/imgTest2.webp",
     name: "Desk",
     category: ["furniture", "table"],
     price: 129.99,
@@ -21,7 +21,7 @@ const products = [
   },
   {
     id: "9c17c2f3-4cb8-409e-865b-7e8a132c7201",
-    image: "/public/images/imagesTestProducts/imgTest3.webp",
+    image: "/images/imagesTestProducts/imgTest3.webp",
     name: "Bookshelf",
     category: ["furniture", "storage"],
     price: 79.99,
@@ -31,7 +31,7 @@ const products = [
   },
   {
     id: "2dafe927-d4f2-448a-b3d2-cf6198fe046f",
-    image: "/public/images/imagesTestProducts/imgTest4.webp",
+    image: "/images/imagesTestProducts/imgTest4.webp",
     name: "Armchair",
     category: ["furniture", "chair"],
     price: 199.99,
@@ -41,7 +41,7 @@ const products = [
   },
   {
     id: "dd8bb3a2-0454-429d-89b7-979f78a05939",
-    image: "/public/images/imagesTestProducts/imgTest5.webp",
+    image: "/images/imagesTestProducts/imgTest5.webp",
     name: "Coffee Table",
     category: ["furniture", "table"],
     price: 89.99,
@@ -51,7 +51,7 @@ const products = [
   },
   {
     id: "e5db2c28-9fa3-4e77-9c65-b6bf85c7600f",
-    image: "/public/images/imagesTestProducts/imgTest6.webp",
+    image: "/images/imagesTestProducts/imgTest6.webp",
     name: "Wardrobe",
     category: ["furniture", "storage"],
     price: 299.99,
@@ -61,7 +61,7 @@ const products = [
   },
   {
     id: "7e0fbc76-890c-4a0b-86eb-1eab0ec1d299",
-    image: "/public/images/imagesTestProducts/imgTest7.webp",
+    image: "/images/imagesTestProducts/imgTest7.webp",
     name: "Dining Table",
     category: ["furniture", "table"],
     price: 249.99,
@@ -71,7 +71,7 @@ const products = [
   },
   {
     id: "872a1cbf-d5c4-490a-b4b7-ec7ab652f27c",
-    image: "/public/images/imagesTestProducts/imgTest8.webp",
+    image: "/images/imagesTestProducts/imgTest8.webp",
     name: "Shelves",
     category: ["furniture", "storage"],
     price: 69.99,
@@ -81,7 +81,7 @@ const products = [
   },
   {
     id: "4ebf72c3-20b0-4fc3-9db3-947943158618",
-    image: "/public/images/imagesTestProducts/imgTest9.webp",
+    image: "/images/imagesTestProducts/imgTest9.webp",
     name: "Bar Stool",
     category: ["furniture", "chair"],
     price: 39.99,
