@@ -8,33 +8,57 @@ const ProductsNav: FC<MainNavProps> = ({ toggleProductsNav }) => {
       <section className="flex flex-col gap-y-2">
         <p className="text-lg">OUR PRODUCTS</p>
         <a
-          href="#"
+          href="/products"
           className="text-left font-bold transition-colors duration-200 hover:text-gold"
         >
           All
         </a>
-        <a href="#" className="transition-colors duration-200 hover:text-gold">
+        <a
+          href="/products"
+          className="transition-colors duration-200 hover:text-gold"
+        >
           Living room furniture
         </a>
-        <a href="#" className="transition-colors duration-200 hover:text-gold">
+        <a
+          href="/products"
+          className="transition-colors duration-200 hover:text-gold"
+        >
           Children’s furniture
         </a>
-        <a href="#" className="transition-colors duration-200 hover:text-gold">
+        <a
+          href="/products"
+          className="transition-colors duration-200 hover:text-gold"
+        >
           Sofas
         </a>
-        <a href="#" className="transition-colors duration-200 hover:text-gold">
+        <a
+          href="/products"
+          className="transition-colors duration-200 hover:text-gold"
+        >
           Chairs
         </a>
-        <a href="#" className="transition-colors duration-200 hover:text-gold">
+        <a
+          href="/products"
+          className="transition-colors duration-200 hover:text-gold"
+        >
           Beds
         </a>
-        <a href="#" className="transition-colors duration-200 hover:text-gold">
+        <a
+          href="/products"
+          className="transition-colors duration-200 hover:text-gold"
+        >
           Dining room furniture
         </a>
-        <a href="#" className="transition-colors duration-200 hover:text-gold">
+        <a
+          href="/products"
+          className="transition-colors duration-200 hover:text-gold"
+        >
           Furniture sets
         </a>
-        <a href="#" className="transition-colors duration-200 hover:text-gold">
+        <a
+          href="/products"
+          className="transition-colors duration-200 hover:text-gold"
+        >
           Outdoor furniture
         </a>
       </section>

@@ -19,3 +19,10 @@ export interface ButtonProfileInputProps {
   first?: boolean;
   onClick?: () => void;
 }
+
+export interface SelectInputProps {
+  label: string;
+  // NOTE: Esto tendré que cambiarlo cuando sepa exactamente que objeto le voy a pasar
+  values: any[];
+  onClick?: () => void;
+}
