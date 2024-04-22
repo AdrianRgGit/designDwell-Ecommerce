@@ -5,6 +5,7 @@ import NotFoundPage from "./components/Error/NotFoundPage/NotFoundPage";
 import Auth from "./components/Auth/Auth";
 import Profile from "./components/Profile/Profile";
 import Products from "./components/Products/Products";
+import ProductDetail from "./components/Products/ProductDetail/ProductDetail";
 
 const routes = createBrowserRouter([
   {
@@ -27,7 +28,11 @@ const routes = createBrowserRouter([
     element: <Products />,
     errorElement: <ErrorPage />,
   },
-
+  {
+    path: "/products/:productName/:id",
+    element: <ProductDetail />,
+    errorElement: <ErrorPage />,
+  },
 
   {
     path: "*",

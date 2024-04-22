@@ -10,7 +10,7 @@ const ProductCard: FC<ProductCardProps> = ({ products }) => {
           key={product.id}
           className="transform border-b transition-transform duration-300 hover:scale-105"
         >
-          <a href="#">
+          <a href={`/products/${product.name}/${product.id}`}>
             <img
               src={product.image}
               alt={product.name}
