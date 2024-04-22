@@ -1,3 +1,5 @@
+import { ChangeEvent } from "react";
+
 export interface TextFieldInputProps {
   label: string;
   type: string;
@@ -25,4 +27,10 @@ export interface SelectInputProps {
   // NOTE: Esto tendré que cambiarlo cuando sepa exactamente que objeto le voy a pasar
   values: any[];
   onClick?: () => void;
+}
+
+export interface ProductAmountInputProps {
+  amount: number;
+  onIncrement: () => void;
+  onDecrement: () => void;
 }
