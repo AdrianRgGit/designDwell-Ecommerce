@@ -5,6 +5,8 @@ const products = [
     name: "Stool",
     category: ["furniture", "chair"],
     price: 49.99,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed posuere augue. Morbi et dolor nunc. Nulla auctor nunc at mauris facilisis accumsan. Donec egestas lacinia ligula, placerat aliquet augue dapibus non. Vivamus convallis ex vitae lobortis fringilla. Fusce nec erat tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec cursus egestas volutpat. Nunc lorem ante, sollicitudin a dignissim eu, malesuada a dui. Donec hendrerit at elit sed mollis. Curabitur eget ipsum ultricies, feugiat eros eu, mattis ex. Donec nec mi eros. Sed ut odio orci. Nam justo orci, vulputate at vestibulum et, pulvinar nec mi. Nunc vulputate turpis justo, et condimentum nulla pellentesque vitae. Fusce nulla risus, fringilla ut sagittis eu, malesuada auctor sem. Vestibulum leo nisi, feugiat eu mi at, interdum euismod nisi. Donec felis nulla, tempor ac auctor vel, ultricies vel nulla. Etiam tincidunt fringilla nunc. Praesent id pharetra enim. Nunc laoreet dapibus bibendum. Maecenas sit amet luctus mi. Sed nulla eros, suscipit vitae pretium nec, sollicitudin et mi.",
     new: true,
     userLike: true,
     likes: 233,
@@ -15,6 +17,8 @@ const products = [
     name: "Desk",
     category: ["furniture", "table"],
     price: 129.99,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed posuere augue. Morbi et dolor nunc. Nulla auctor nunc at mauris facilisis accumsan. Donec egestas lacinia ligula, placerat aliquet augue dapibus non. Vivamus convallis ex vitae lobortis fringilla. Fusce nec erat tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec cursus egestas volutpat. Nunc lorem ante, sollicitudin a dignissim eu, malesuada a dui. Donec hendrerit at elit sed mollis. Curabitur eget ipsum ultricies, feugiat eros eu, mattis ex. Donec nec mi eros. Sed ut odio orci. Nam justo orci, vulputate at vestibulum et, pulvinar nec mi. Nunc vulputate turpis justo, et condimentum nulla pellentesque vitae. Fusce nulla risus, fringilla ut sagittis eu, malesuada auctor sem. Vestibulum leo nisi, feugiat eu mi at, interdum euismod nisi. Donec felis nulla, tempor ac auctor vel, ultricies vel nulla. Etiam tincidunt fringilla nunc. Praesent id pharetra enim. Nunc laoreet dapibus bibendum. Maecenas sit amet luctus mi. Sed nulla eros, suscipit vitae pretium nec, sollicitudin et mi.",
     new: false,
     userLike: true,
     likes: 120,
@@ -25,6 +29,8 @@ const products = [
     name: "Bookshelf",
     category: ["furniture", "storage"],
     price: 79.99,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed posuere augue. Morbi et dolor nunc. Nulla auctor nunc at mauris facilisis accumsan. Donec egestas lacinia ligula, placerat aliquet augue dapibus non. Vivamus convallis ex vitae lobortis fringilla. Fusce nec erat tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec cursus egestas volutpat. Nunc lorem ante, sollicitudin a dignissim eu, malesuada a dui. Donec hendrerit at elit sed mollis. Curabitur eget ipsum ultricies, feugiat eros eu, mattis ex. Donec nec mi eros. Sed ut odio orci. Nam justo orci, vulputate at vestibulum et, pulvinar nec mi. Nunc vulputate turpis justo, et condimentum nulla pellentesque vitae. Fusce nulla risus, fringilla ut sagittis eu, malesuada auctor sem. Vestibulum leo nisi, feugiat eu mi at, interdum euismod nisi. Donec felis nulla, tempor ac auctor vel, ultricies vel nulla. Etiam tincidunt fringilla nunc. Praesent id pharetra enim. Nunc laoreet dapibus bibendum. Maecenas sit amet luctus mi. Sed nulla eros, suscipit vitae pretium nec, sollicitudin et mi.",
     new: true,
     userLike: false,
     likes: 80,
@@ -35,6 +41,9 @@ const products = [
     name: "Armchair",
     category: ["furniture", "chair"],
     price: 199.99,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed posuere augue. Morbi et dolor nunc. Nulla auctor nunc at mauris facilisis accumsan. Donec egestas lacinia ligula, placerat aliquet augue dapibus non. Vivamus convallis ex vitae lobortis fringilla. Fusce nec erat tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec cursus egestas volutpat. Nunc lorem ante, sollicitudin a dignissim eu, malesuada a dui. Donec hendrerit at elit sed mollis. Curabitur eget ipsum ultricies, feugiat eros eu, mattis ex. Donec nec mi eros. Sed ut odio orci. Nam justo orci, vulputate at vestibulum et, pulvinar nec mi. Nunc vulputate turpis justo, et condimentum nulla pellentesque vitae. Fusce nulla risus, fringilla ut sagittis eu, malesuada auctor sem. Vestibulum leo nisi, feugiat eu mi at, interdum euismod nisi. Donec felis nulla, tempor ac auctor vel, ultricies vel nulla. Etiam tincidunt fringilla nunc. Praesent id pharetra enim. Nunc laoreet dapibus bibendum. Maecenas sit amet luctus mi. Sed nulla eros, suscipit vitae pretium nec, sollicitudin et mi.",
+
     new: false,
     userLike: true,
     likes: 400,
@@ -45,6 +54,9 @@ const products = [
     name: "Coffee Table",
     category: ["furniture", "table"],
     price: 89.99,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed posuere augue. Morbi et dolor nunc. Nulla auctor nunc at mauris facilisis accumsan. Donec egestas lacinia ligula, placerat aliquet augue dapibus non. Vivamus convallis ex vitae lobortis fringilla. Fusce nec erat tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec cursus egestas volutpat. Nunc lorem ante, sollicitudin a dignissim eu, malesuada a dui. Donec hendrerit at elit sed mollis. Curabitur eget ipsum ultricies, feugiat eros eu, mattis ex. Donec nec mi eros. Sed ut odio orci. Nam justo orci, vulputate at vestibulum et, pulvinar nec mi. Nunc vulputate turpis justo, et condimentum nulla pellentesque vitae. Fusce nulla risus, fringilla ut sagittis eu, malesuada auctor sem. Vestibulum leo nisi, feugiat eu mi at, interdum euismod nisi. Donec felis nulla, tempor ac auctor vel, ultricies vel nulla. Etiam tincidunt fringilla nunc. Praesent id pharetra enim. Nunc laoreet dapibus bibendum. Maecenas sit amet luctus mi. Sed nulla eros, suscipit vitae pretium nec, sollicitudin et mi.",
+
     new: true,
     userLike: false,
     likes: 150,
@@ -55,6 +67,9 @@ const products = [
     name: "Wardrobe",
     category: ["furniture", "storage"],
     price: 299.99,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed posuere augue. Morbi et dolor nunc. Nulla auctor nunc at mauris facilisis accumsan. Donec egestas lacinia ligula, placerat aliquet augue dapibus non. Vivamus convallis ex vitae lobortis fringilla. Fusce nec erat tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec cursus egestas volutpat. Nunc lorem ante, sollicitudin a dignissim eu, malesuada a dui. Donec hendrerit at elit sed mollis. Curabitur eget ipsum ultricies, feugiat eros eu, mattis ex. Donec nec mi eros. Sed ut odio orci. Nam justo orci, vulputate at vestibulum et, pulvinar nec mi. Nunc vulputate turpis justo, et condimentum nulla pellentesque vitae. Fusce nulla risus, fringilla ut sagittis eu, malesuada auctor sem. Vestibulum leo nisi, feugiat eu mi at, interdum euismod nisi. Donec felis nulla, tempor ac auctor vel, ultricies vel nulla. Etiam tincidunt fringilla nunc. Praesent id pharetra enim. Nunc laoreet dapibus bibendum. Maecenas sit amet luctus mi. Sed nulla eros, suscipit vitae pretium nec, sollicitudin et mi.",
+
     new: true,
     userLike: true,
     likes: 210,
@@ -65,6 +80,9 @@ const products = [
     name: "Dining Table",
     category: ["furniture", "table"],
     price: 249.99,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed posuere augue. Morbi et dolor nunc. Nulla auctor nunc at mauris facilisis accumsan. Donec egestas lacinia ligula, placerat aliquet augue dapibus non. Vivamus convallis ex vitae lobortis fringilla. Fusce nec erat tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec cursus egestas volutpat. Nunc lorem ante, sollicitudin a dignissim eu, malesuada a dui. Donec hendrerit at elit sed mollis. Curabitur eget ipsum ultricies, feugiat eros eu, mattis ex. Donec nec mi eros. Sed ut odio orci. Nam justo orci, vulputate at vestibulum et, pulvinar nec mi. Nunc vulputate turpis justo, et condimentum nulla pellentesque vitae. Fusce nulla risus, fringilla ut sagittis eu, malesuada auctor sem. Vestibulum leo nisi, feugiat eu mi at, interdum euismod nisi. Donec felis nulla, tempor ac auctor vel, ultricies vel nulla. Etiam tincidunt fringilla nunc. Praesent id pharetra enim. Nunc laoreet dapibus bibendum. Maecenas sit amet luctus mi. Sed nulla eros, suscipit vitae pretium nec, sollicitudin et mi.",
+
     new: false,
     userLike: true,
     likes: 180,
@@ -75,6 +93,9 @@ const products = [
     name: "Shelves",
     category: ["furniture", "storage"],
     price: 69.99,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed posuere augue. Morbi et dolor nunc. Nulla auctor nunc at mauris facilisis accumsan. Donec egestas lacinia ligula, placerat aliquet augue dapibus non. Vivamus convallis ex vitae lobortis fringilla. Fusce nec erat tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec cursus egestas volutpat. Nunc lorem ante, sollicitudin a dignissim eu, malesuada a dui. Donec hendrerit at elit sed mollis. Curabitur eget ipsum ultricies, feugiat eros eu, mattis ex. Donec nec mi eros. Sed ut odio orci. Nam justo orci, vulputate at vestibulum et, pulvinar nec mi. Nunc vulputate turpis justo, et condimentum nulla pellentesque vitae. Fusce nulla risus, fringilla ut sagittis eu, malesuada auctor sem. Vestibulum leo nisi, feugiat eu mi at, interdum euismod nisi. Donec felis nulla, tempor ac auctor vel, ultricies vel nulla. Etiam tincidunt fringilla nunc. Praesent id pharetra enim. Nunc laoreet dapibus bibendum. Maecenas sit amet luctus mi. Sed nulla eros, suscipit vitae pretium nec, sollicitudin et mi.",
+
     new: true,
     userLike: false,
     likes: 90,
@@ -85,6 +106,9 @@ const products = [
     name: "Bar Stool",
     category: ["furniture", "chair"],
     price: 39.99,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed posuere augue. Morbi et dolor nunc. Nulla auctor nunc at mauris facilisis accumsan. Donec egestas lacinia ligula, placerat aliquet augue dapibus non. Vivamus convallis ex vitae lobortis fringilla. Fusce nec erat tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec cursus egestas volutpat. Nunc lorem ante, sollicitudin a dignissim eu, malesuada a dui. Donec hendrerit at elit sed mollis. Curabitur eget ipsum ultricies, feugiat eros eu, mattis ex. Donec nec mi eros. Sed ut odio orci. Nam justo orci, vulputate at vestibulum et, pulvinar nec mi. Nunc vulputate turpis justo, et condimentum nulla pellentesque vitae. Fusce nulla risus, fringilla ut sagittis eu, malesuada auctor sem. Vestibulum leo nisi, feugiat eu mi at, interdum euismod nisi. Donec felis nulla, tempor ac auctor vel, ultricies vel nulla. Etiam tincidunt fringilla nunc. Praesent id pharetra enim. Nunc laoreet dapibus bibendum. Maecenas sit amet luctus mi. Sed nulla eros, suscipit vitae pretium nec, sollicitudin et mi.",
+
     new: true,
     userLike: true,
     likes: 300,

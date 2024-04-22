@@ -4,6 +4,7 @@ export interface ProductType {
   name: string;
   category: string[];
   price: number;
+  description: string;
   new: boolean;
   userLike: boolean;
   likes: number;
