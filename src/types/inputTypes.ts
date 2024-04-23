@@ -34,3 +34,4 @@ export interface ProductAmountInputProps {
   onIncrement: () => void;
   onDecrement: () => void;
 }
+

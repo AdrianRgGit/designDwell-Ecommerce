@@ -1,10 +1,11 @@
 import { useParams } from "react-router-dom";
 import ButtonInput from "../../Inputs/ButtonInput/ButtonInput";
 import ProductAmountInput from "../../Inputs/ProductAmountInput/ProductAmountInput";
-import { ChangeEvent, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ProductType } from "../../../types/productType";
 import fetchProducts from "../../../services/productService";
 import ProductNotFound from "../../Error/ProductNotFound/ProductNotFound";
+import ButtonGoBack from "../../Inputs/ButtonGoBack/ButtonGoBack";
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -46,6 +47,10 @@ const ProductDetail = () => {
 
   return (
     <div className="mb-12 mt-20 p-8">
+      <div className="mb-4">
+        <ButtonGoBack />
+      </div>
+
       <section className="mb-6">
         <h2 className="font-coco-gothic-bold text-2xl font-bold">
           {product.name}
