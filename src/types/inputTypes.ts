@@ -26,7 +26,8 @@ export interface SelectInputProps {
   label: string;
   // NOTE: Esto tendré que cambiarlo cuando sepa exactamente que objeto le voy a pasar
   values: any[];
-  onClick?: () => void;
+  selectedFilterValue: string;
+  onChange?: (value: string) => void;
 }
 
 export interface ProductAmountInputProps {
@@ -34,4 +35,3 @@ export interface ProductAmountInputProps {
   onIncrement: () => void;
   onDecrement: () => void;
 }
-

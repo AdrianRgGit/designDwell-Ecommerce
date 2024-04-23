@@ -11,6 +11,10 @@ import { ProductType } from "../../types/productType";
 
 const Products = () => {
   const [products, setProducts] = useState<ProductType[]>([]);
+  const [selectedSortFilterValue, setSelectedSortFilterValue] = useState("");
+  const [selectedPriceFilterValue, setSelectedPriceFilterValue] = useState("");
+  const [selectedCategoryFilterValue, setSelectedCategoryFilterValue] =
+    useState("");
 
   useEffect(() => {
     const getProducts = async () => {
@@ -24,12 +28,39 @@ const Products = () => {
     getProducts();
   }, []);
 
+  const handleSortFilterChange = (event: any) => {
+    setSelectedSortFilterValue(event.target.value);
+  };
+
+  const handlePriceFilterChange = (event: any) => {
+    setSelectedPriceFilterValue(event.target.value);
+  };
+
+  const handleCategoryFilterChange = (event: any) => {
+    setSelectedCategoryFilterValue(event.target.value);
+  };
+
   return (
     <div className="mb-12 mt-20 p-8">
       <section className="mb-12 flex gap-x-6">
-        <SelectInput label="Sort" values={sortFilterValues} />
-        <SelectInput label="Price" values={priceFilterValues} />
-        <SelectInput label="Category" values={categoryFilterValues} />
+        <SelectInput
+          label="Sort"
+          values={sortFilterValues}
+          selectedFilterValue={selectedSortFilterValue}
+          onChange={handleSortFilterChange}
+        />
+        <SelectInput
+          label="Price"
+          values={priceFilterValues}
+          selectedFilterValue={selectedPriceFilterValue}
+          onChange={handlePriceFilterChange}
+        />
+        <SelectInput
+          label="Category"
+          values={categoryFilterValues}
+          selectedFilterValue={selectedCategoryFilterValue}
+          onChange={handleCategoryFilterChange}
+        />
       </section>
 
       <section className="flex flex-wrap items-center justify-center gap-x-4 gap-y-8">

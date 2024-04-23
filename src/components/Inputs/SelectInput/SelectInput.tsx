@@ -2,26 +2,20 @@ import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 import { FC, useState } from "react";
 import { SelectInputProps } from "../../../types/inputTypes";
 
-const SelectInput: FC<SelectInputProps> = ({ label, values, onClick }) => {
-  const [selectedValue, setSelectedValue] = useState(""); // Estado para el valor seleccionado
-
-  const handleChange = (event: any) => {
-    setSelectedValue(event.target.value);
-  };
-
+const SelectInput: FC<SelectInputProps> = ({
+  label,
+  values,
+  selectedFilterValue,
+  onChange,
+}) => {
   return (
     <FormControl sx={{ m: 1, minWidth: 80 }}>
-      <InputLabel
-        id="select-input"
-      >
-        {label}
-      </InputLabel>
+      <InputLabel id="select-input">{label}</InputLabel>
       <Select
         labelId="select-input"
         id="demo-simple-select-autowidth"
-        value={selectedValue}
-        onChange={handleChange}
-        autoWidth
+        value={selectedFilterValue}
+        onChange={onChange}
         label={label}
         className="min-w-48"
         sx={{
