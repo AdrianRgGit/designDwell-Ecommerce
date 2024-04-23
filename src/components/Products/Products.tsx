@@ -8,9 +8,11 @@ import SelectInput from "../Inputs/SelectInput/SelectInput";
 import ProductCard from "./ProductCard/ProductCard";
 import fetchProducts from "../../services/productService";
 import { ProductType } from "../../types/productType";
+import { CircularProgress } from "@mui/material";
 
 const Products = () => {
   const [products, setProducts] = useState<ProductType[]>([]);
+  const [filteredProducts, setFilteredProducts] = useState<ProductType[]>([]);
   const [selectedSortFilterValue, setSelectedSortFilterValue] = useState("");
   const [selectedPriceFilterValue, setSelectedPriceFilterValue] = useState("");
   const [selectedCategoryFilterValue, setSelectedCategoryFilterValue] =
@@ -28,6 +30,22 @@ const Products = () => {
     getProducts();
   }, []);
 
+  // useEffect(() => {
+  //   let filtered = [...products];
+
+  //   if (selectedCategoryFilterValue) {
+  //     filtered = filteredProducts.filter((product) =>
+  //       product.category.includes(selectedCategoryFilterValue),
+  //     );
+  //   }
+
+  //   setFilteredProducts(filtered);
+  // }, [
+  //   selectedSortFilterValue,
+  //   selectedPriceFilterValue,
+  //   selectedCategoryFilterValue,
+  // ]);
+
   const handleSortFilterChange = (event: any) => {
     setSelectedSortFilterValue(event.target.value);
   };
@@ -39,6 +57,10 @@ const Products = () => {
   const handleCategoryFilterChange = (event: any) => {
     setSelectedCategoryFilterValue(event.target.value);
   };
+
+  if(!products){
+    return <CircularProgress color="inherit" />;
+  }
 
   return (
     <div className="mb-12 mt-20 p-8">
@@ -64,6 +86,11 @@ const Products = () => {
       </section>
 
       <section className="flex flex-wrap items-center justify-center gap-x-4 gap-y-8">
+        {/* {products.length === 0 ? (
+          <ProductCard products={products} />
+        ) : (
+          <p className="text-lg">No items found</p>
+        )} */}
         <ProductCard products={products} />
       </section>
     </div>

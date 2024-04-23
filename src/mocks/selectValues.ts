@@ -1,5 +1,10 @@
 export const sortFilterValues = [
   {
+    id: 0,
+    label: "All",
+    value: "all",
+  },
+  {
     id: 1,
     label: "Price from highest to lowest",
     value: "highToLow",
@@ -22,6 +27,11 @@ export const sortFilterValues = [
 ];
 
 export const priceFilterValues = [
+  {
+    id: 0,
+    label: "All",
+    value: "all",
+  },
   {
     id: 1,
     label: "0.00 - 49.99€",
@@ -50,6 +60,11 @@ export const priceFilterValues = [
 ];
 
 export const categoryFilterValues = [
+  {
+    id: 0,
+    label: "All",
+    value: "all",
+  },
   {
     id: 1,
     label: "Seating",
