@@ -31,36 +31,31 @@ const Products = () => {
   }, []);
 
   useEffect(() => {
-    let sorted = [...products];
+    let filtered = [...products];
 
+    // NOTE: SORT
     switch (selectedSortFilterValue) {
       case "highToLow":
-        sorted = sorted.sort((a, b) => b.price - a.price);
+        filtered = filtered.sort((a, b) => b.price - a.price);
         break;
       case "lowToHigh":
-        sorted = sorted.sort((a, b) => a.price - b.price);
+        filtered = filtered.sort((a, b) => a.price - b.price);
         break;
       case "newest":
-        sorted = sorted.sort((a, b) => {
-          // NOTE: Lo hago con constantes si no ts se queja
+        filtered = filtered.sort((a, b) => {
           const dateA = new Date(a.updatedAt);
           const dateB = new Date(b.updatedAt);
           return dateB.getTime() - dateA.getTime();
         });
         break;
       case "popular":
-        sorted = sorted.sort((a, b) => b.likes - a.likes);
+        filtered = filtered.sort((a, b) => b.likes - a.likes);
         break;
       default:
         break;
     }
 
-    setFilteredProducts(sorted);
-  }, [products, selectedSortFilterValue]);
-
-  useEffect(() => {
-    let filtered = [...products];
-
+    // NOTE: PRICE
     switch (parseInt(selectedPriceFilterValue)) {
       case 1:
         filtered = filtered.filter((product) => product.price <= 49.99);
@@ -87,20 +82,7 @@ const Products = () => {
         break;
     }
 
-    setFilteredProducts(filtered);
-  }, [products, selectedPriceFilterValue]);
-
-  useEffect(() => {
-    let filtered = [...products];
-
-    if (
-      !selectedSortFilterValue &&
-      !selectedPriceFilterValue &&
-      !selectedCategoryFilterValue
-    ) {
-      filtered = [...products];
-    }
-
+    // NOTE: CATEGORY
     if (selectedCategoryFilterValue) {
       filtered = filtered.filter((product) =>
         product.category.includes(selectedCategoryFilterValue),
@@ -108,7 +90,12 @@ const Products = () => {
     }
 
     setFilteredProducts(filtered);
-  }, [products, selectedCategoryFilterValue]);
+  }, [
+    products,
+    selectedPriceFilterValue,
+    selectedCategoryFilterValue,
+    selectedSortFilterValue,
+  ]);
 
   const handleSortFilterChange = (event: any) => {
     setSelectedSortFilterValue(event.target.value);
