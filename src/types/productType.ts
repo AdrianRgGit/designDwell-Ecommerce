@@ -8,6 +8,8 @@ export interface ProductType {
   new: boolean;
   userLike: boolean;
   likes: number;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export interface ProductCardProps {

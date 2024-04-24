@@ -10,6 +10,8 @@ const products = [
     new: true,
     userLike: true,
     likes: 233,
+    createdAt: "Fri Apr 01 2022 12:00:00 GMT-0400 (Eastern Daylight Time)",
+    updatedAt: "Fri Apr 01 2022 12:00:00 GMT-0400 (Eastern Daylight Time)",
   },
   {
     id: "1ae02b44-5b29-4b78-bc17-4f8d3326e13a",
@@ -22,6 +24,8 @@ const products = [
     new: false,
     userLike: true,
     likes: 120,
+    createdAt: "Mon May 16 2022 09:30:00 GMT-0400 (Eastern Daylight Time)",
+    updatedAt: "Mon May 16 2022 09:30:00 GMT-0400 (Eastern Daylight Time)",
   },
   {
     id: "9c17c2f3-4cb8-409e-865b-7e8a132c7201",
@@ -34,6 +38,8 @@ const products = [
     new: true,
     userLike: false,
     likes: 80,
+    createdAt: "Wed Aug 03 2022 18:15:00 GMT-0400 (Eastern Daylight Time)",
+    updatedAt: "Wed Aug 03 2022 18:15:00 GMT-0400 (Eastern Daylight Time)",
   },
   {
     id: "2dafe927-d4f2-448a-b3d2-cf6198fe046f",
@@ -47,6 +53,8 @@ const products = [
     new: false,
     userLike: true,
     likes: 400,
+    createdAt: "Sat Sep 24 2022 21:00:00 GMT-0400 (Eastern Daylight Time)",
+    updatedAt: "Sat Sep 24 2022 21:00:00 GMT-0400 (Eastern Daylight Time)",
   },
   {
     id: "dd8bb3a2-0454-429d-89b7-979f78a05939",
@@ -60,6 +68,8 @@ const products = [
     new: true,
     userLike: false,
     likes: 150,
+    createdAt: "Tue Nov 08 2022 07:45:00 GMT-0500 (Eastern Standard Time)",
+    updatedAt: "Tue Nov 08 2022 07:45:00 GMT-0500 (Eastern Standard Time)",
   },
   {
     id: "e5db2c28-9fa3-4e77-9c65-b6bf85c7600f",
@@ -73,6 +83,8 @@ const products = [
     new: true,
     userLike: true,
     likes: 210,
+    createdAt: "Thu Dec 22 2022 14:20:00 GMT-0500 (Eastern Standard Time)",
+    updatedAt: "Thu Dec 22 2022 14:20:00 GMT-0500 (Eastern Standard Time)",
   },
   {
     id: "7e0fbc76-890c-4a0b-86eb-1eab0ec1d299",
@@ -86,6 +98,8 @@ const products = [
     new: false,
     userLike: true,
     likes: 180,
+    createdAt: "Sun Jan 29 2023 16:55:00 GMT-0500 (Eastern Standard Time)",
+    updatedAt: "Sun Jan 29 2023 16:55:00 GMT-0500 (Eastern Standard Time)",
   },
   {
     id: "872a1cbf-d5c4-490a-b4b7-ec7ab652f27c",
@@ -99,6 +113,8 @@ const products = [
     new: true,
     userLike: false,
     likes: 90,
+    createdAt: "Tue Mar 14 2023 10:10:00 GMT-0400 (Eastern Daylight Time)",
+    updatedAt: "Tue Mar 14 2023 10:10:00 GMT-0400 (Eastern Daylight Time)",
   },
   {
     id: "4ebf72c3-20b0-4fc3-9db3-947943158618",
@@ -112,6 +128,8 @@ const products = [
     new: true,
     userLike: true,
     likes: 300,
+    createdAt: "Fri May 05 2023 23:25:00 GMT-0400 (Eastern Daylight Time)",
+    updatedAt: "Fri May 05 2023 23:25:00 GMT-0400 (Eastern Daylight Time)",
   },
 ];
 

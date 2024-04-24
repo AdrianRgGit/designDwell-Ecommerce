@@ -31,6 +31,34 @@ const Products = () => {
   }, []);
 
   useEffect(() => {
+    let sorted = [...products];
+
+    switch (selectedSortFilterValue) {
+      case "highToLow":
+        sorted = sorted.sort((a, b) => b.price - a.price);
+        break;
+      case "lowToHigh":
+        sorted = sorted.sort((a, b) => a.price - b.price);
+        break;
+      case "newest":
+        sorted = sorted.sort((a, b) => {
+          // NOTE: Lo hago con constantes si no ts se queja
+          const dateA = new Date(a.updatedAt);
+          const dateB = new Date(b.updatedAt);
+          return dateB.getTime() - dateA.getTime();
+        });
+        break;
+      case "popular":
+        sorted = sorted.sort((a, b) => b.likes - a.likes);
+        break;
+      default:
+        break;
+    }
+
+    setFilteredProducts(sorted);
+  }, [products, selectedSortFilterValue]);
+
+  useEffect(() => {
     let filtered = [...products];
 
     switch (parseInt(selectedPriceFilterValue)) {
@@ -56,7 +84,7 @@ const Products = () => {
         filtered = filtered.filter((product) => product.price >= 200);
         break;
       default:
-        filtered = [...products];
+        break;
     }
 
     setFilteredProducts(filtered);
@@ -100,34 +128,37 @@ const Products = () => {
 
   return (
     <div className="mb-12 mt-20 p-8">
-      <section className="mb-12 flex gap-x-6">
-        <SelectInput
-          label="Sort"
-          values={sortFilterValues}
-          selectedFilterValue={selectedSortFilterValue}
-          onChange={handleSortFilterChange}
-        />
-        <SelectInput
-          label="Price"
-          values={priceFilterValues}
-          selectedFilterValue={selectedPriceFilterValue}
-          onChange={handlePriceFilterChange}
-        />
-        <SelectInput
-          label="Category"
-          values={categoryFilterValues}
-          selectedFilterValue={selectedCategoryFilterValue}
-          onChange={handleCategoryFilterChange}
-        />
+      <section className="mb-12 flex items-center justify-between">
+        <div className="flex gap-x-6">
+          <SelectInput
+            label="Sort"
+            values={sortFilterValues}
+            selectedFilterValue={selectedSortFilterValue}
+            onChange={handleSortFilterChange}
+          />
+          <SelectInput
+            label="Price"
+            values={priceFilterValues}
+            selectedFilterValue={selectedPriceFilterValue}
+            onChange={handlePriceFilterChange}
+          />
+          <SelectInput
+            label="Category"
+            values={categoryFilterValues}
+            selectedFilterValue={selectedCategoryFilterValue}
+            onChange={handleCategoryFilterChange}
+          />
+        </div>
+
+        <p className="font-inter">Showing {filteredProducts.length} products</p>
       </section>
 
       <section className="flex flex-wrap items-center justify-center gap-x-4 gap-y-8">
-        {/* {products.length === 0 ? (
-          <ProductCard products={products} />
-        ) : (
+        {filteredProducts.length === 0 ? (
           <p className="text-lg">No items found</p>
-        )} */}
-        <ProductCard products={filteredProducts} />
+        ) : (
+          <ProductCard products={filteredProducts} />
+        )}
       </section>
     </div>
   );
