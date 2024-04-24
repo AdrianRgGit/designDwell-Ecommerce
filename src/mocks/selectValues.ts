@@ -2,7 +2,7 @@ export const sortFilterValues = [
   {
     id: 0,
     label: "All",
-    value: "all",
+    value: "",
   },
   {
     id: 1,
@@ -30,7 +30,7 @@ export const priceFilterValues = [
   {
     id: 0,
     label: "All",
-    value: "all",
+    value: "",
   },
   {
     id: 1,
@@ -63,7 +63,7 @@ export const categoryFilterValues = [
   {
     id: 0,
     label: "All",
-    value: "all",
+    value: "",
   },
   {
     id: 1,

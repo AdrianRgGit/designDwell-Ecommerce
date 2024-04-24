@@ -30,21 +30,57 @@ const Products = () => {
     getProducts();
   }, []);
 
-  // useEffect(() => {
-  //   let filtered = [...products];
+  useEffect(() => {
+    let filtered = [...products];
 
-  //   if (selectedCategoryFilterValue) {
-  //     filtered = filteredProducts.filter((product) =>
-  //       product.category.includes(selectedCategoryFilterValue),
-  //     );
-  //   }
+    switch (parseInt(selectedPriceFilterValue)) {
+      case 1:
+        filtered = filtered.filter((product) => product.price <= 49.99);
+        break;
+      case 2:
+        filtered = filtered.filter(
+          (product) => product.price >= 50 && product.price <= 99.99,
+        );
+        break;
+      case 3:
+        filtered = filtered.filter(
+          (product) => product.price >= 100 && product.price <= 149.99,
+        );
+        break;
+      case 4:
+        filtered = filtered.filter(
+          (product) => product.price >= 150 && product.price <= 199.99,
+        );
+        break;
+      case 5:
+        filtered = filtered.filter((product) => product.price >= 200);
+        break;
+      default:
+        filtered = [...products];
+    }
 
-  //   setFilteredProducts(filtered);
-  // }, [
-  //   selectedSortFilterValue,
-  //   selectedPriceFilterValue,
-  //   selectedCategoryFilterValue,
-  // ]);
+    setFilteredProducts(filtered);
+  }, [products, selectedPriceFilterValue]);
+
+  useEffect(() => {
+    let filtered = [...products];
+
+    if (
+      !selectedSortFilterValue &&
+      !selectedPriceFilterValue &&
+      !selectedCategoryFilterValue
+    ) {
+      filtered = [...products];
+    }
+
+    if (selectedCategoryFilterValue) {
+      filtered = filtered.filter((product) =>
+        product.category.includes(selectedCategoryFilterValue),
+      );
+    }
+
+    setFilteredProducts(filtered);
+  }, [products, selectedCategoryFilterValue]);
 
   const handleSortFilterChange = (event: any) => {
     setSelectedSortFilterValue(event.target.value);
@@ -58,7 +94,7 @@ const Products = () => {
     setSelectedCategoryFilterValue(event.target.value);
   };
 
-  if(!products){
+  if (!products) {
     return <CircularProgress color="inherit" />;
   }
 
@@ -91,7 +127,7 @@ const Products = () => {
         ) : (
           <p className="text-lg">No items found</p>
         )} */}
-        <ProductCard products={products} />
+        <ProductCard products={filteredProducts} />
       </section>
     </div>
   );
