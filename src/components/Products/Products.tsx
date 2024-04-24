@@ -109,6 +109,12 @@ const Products = () => {
     setSelectedCategoryFilterValue(event.target.value);
   };
 
+  const resetFilters = () => {
+    setSelectedSortFilterValue("");
+    setSelectedPriceFilterValue("");
+    setSelectedCategoryFilterValue("");
+  };
+
   if (!products) {
     return <CircularProgress color="inherit" />;
   }
@@ -135,6 +141,9 @@ const Products = () => {
             selectedFilterValue={selectedCategoryFilterValue}
             onChange={handleCategoryFilterChange}
           />
+          <button type="button" onClick={resetFilters}>
+            Reset filters
+          </button>
         </div>
 
         <p className="font-inter">Showing {filteredProducts.length} products</p>
