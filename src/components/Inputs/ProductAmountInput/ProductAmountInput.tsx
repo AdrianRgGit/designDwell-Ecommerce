@@ -15,7 +15,7 @@ const ProductAmountInput: FC<ProductAmountInputProps> = ({
       >
         <Minus />
       </button>
-      <span className="text-xl font-bold">{amount}</span>
+      <span className="font-inter text-xl font-bold">{amount}</span>
       <button
         onClick={onIncrement}
         className="flex h-12 w-12 items-center justify-center rounded-full border text-center"

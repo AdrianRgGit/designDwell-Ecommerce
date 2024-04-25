@@ -94,7 +94,7 @@ const ProductDetail = () => {
           </div>
 
           <section>
-            <p className="text-end text-4xl font-bold">
+            <p className="text-end font-inter text-4xl font-bold">
               {(product.price * amount).toFixed(2)}€
             </p>
           </section>
