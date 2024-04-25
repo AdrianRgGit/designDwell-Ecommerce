@@ -1,4 +1,4 @@
-import { ChangeEvent } from "react";
+import { SelectChangeEvent } from "@mui/material";
 
 export interface TextFieldInputProps {
   label: string;
@@ -27,7 +27,7 @@ export interface SelectInputProps {
   // NOTE: Esto tendré que cambiarlo cuando sepa exactamente que objeto le voy a pasar
   values: any[];
   selectedFilterValue: string;
-  onChange?: (value: string) => void;
+  onChange?: (event: SelectChangeEvent<string>, child: React.ReactNode) => void;
 }
 
 export interface ProductAmountInputProps {

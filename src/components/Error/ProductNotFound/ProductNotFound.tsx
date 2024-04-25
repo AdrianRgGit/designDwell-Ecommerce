@@ -1,5 +1,3 @@
-import React from 'react'
-
 const ProductNotFound = () => {
   return (
     <section className="flex h-screen flex-col items-center justify-center space-y-6">
