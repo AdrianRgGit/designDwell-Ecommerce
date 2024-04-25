@@ -85,8 +85,8 @@ const ProductDetail = () => {
 
           <div className="-mt-6 text-sm">
             <p>
-              If you want to buy more than the maximum quantity, ({maxAmount}{" "}
-              un.){" "}
+              If you want to buy more than the maximum quantity,{" "}
+              <span className="font-inter">({maxAmount} un.)</span>{" "}
               <a href="#" className="text-gold">
                 please contact us.
               </a>
