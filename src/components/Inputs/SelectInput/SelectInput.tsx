@@ -1,5 +1,5 @@
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
-import { FC, useState } from "react";
+import { FC } from "react";
 import { SelectInputProps } from "../../../types/inputTypes";
 
 const SelectInput: FC<SelectInputProps> = ({
