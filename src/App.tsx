@@ -1,5 +1,9 @@
-function App() {
-  return <h1 className="underlin text-3xl font-bold">Hello world!</h1>;
-}
+import { RouterProvider } from "react-router-dom";
+import routes from "./routes";
+import Layout from "./components/Layout/Layout";
+
+const App = () => {
+  return <Layout children={<RouterProvider router={routes} />}></Layout>;
+};
 
 export default App;
