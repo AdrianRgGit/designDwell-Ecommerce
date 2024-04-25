@@ -9,23 +9,28 @@ DESIGN DWELL is designed to provide users with a seamless shopping experience fo
 ## Features
 
 ### User Authentication
+
 - **User Registration**: New users can sign up for an account by providing necessary details.
 - **User Login**: Registered users can securely log in to their accounts.
 
 ### Shopping Experience
+
 - **Product Viewing**: Users can browse through a selection of luxury furniture products.
 - **Cart Management**: Users can add items to their shopping cart for easy checkout.
 - **Product Search**: Implemented search functionality to find specific products quickly.
 - **Filtering**: Users can refine product search results using filters like price range, category, etc.
 
 ### Order Management
+
 - **Order Placement**: Users can create orders, specifying delivery details and payment options.
 - **Order History**: Users can view their order history to track past purchases and deliveries.
 
 ### User Profile
+
 - **Profile Management**: Users can view and update their profile information, including profile pictures.
 
 ### Additional Features
+
 - **Admin View**: Admins can manage product inventory through a dedicated admin dashboard.
 - **Favorite Products**: Users can mark products as favorites for future reference.
 - **Product Reviews**: Users can leave reviews for products, providing feedback and recommendations.
@@ -47,4 +52,4 @@ Contributions are welcome! Feel free to submit bug reports, feature requests, or
 
 ## Note
 
-Please be aware that this project is currently in development, and not all features may be fully implemented yet. We appreciate your patience and understanding as I work to enhance the platform. You can see the project displayed here [design-dwell-ecommerce.vercel.app].
+Please be aware that this project is currently in development, and not all features may be fully implemented yet. We appreciate your patience and understanding as I work to enhance the platform. You can see the project displayed here [Design Dwell](design-dwell-ecommerce.vercel.app).
