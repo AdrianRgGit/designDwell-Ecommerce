@@ -52,4 +52,4 @@ Contributions are welcome! Feel free to submit bug reports, feature requests, or
 
 ## Note
 
-Please be aware that this project is currently in development, and not all features may be fully implemented yet. We appreciate your patience and understanding as I work to enhance the platform. You can see the project displayed here [Design Dwell](design-dwell-ecommerce.vercel.app).
+Please be aware that this project is currently in development, and not all features may be fully implemented yet. We appreciate your patience and understanding as I work to enhance the platform. You can see the project displayed here [Design Dwell](https://design-dwell-ecommerce.vercel.app/).
