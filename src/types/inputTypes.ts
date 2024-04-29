@@ -5,6 +5,7 @@ export interface TextFieldInputProps {
   type: string;
   required?: boolean;
   grow?: boolean;
+  onChange?: (value: any) => void;
 }
 
 export interface ButtonInputProps {

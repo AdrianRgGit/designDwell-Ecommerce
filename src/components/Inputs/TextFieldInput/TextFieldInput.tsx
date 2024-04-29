@@ -7,9 +7,11 @@ const TextFieldInput: FC<TextFieldInputProps> = ({
   type,
   required,
   grow,
+  onChange,
 }) => {
   return (
     <TextField
+      onChange={onChange}
       className={`${grow ? "w-full" : null}`}
       required={required}
       label={label}
