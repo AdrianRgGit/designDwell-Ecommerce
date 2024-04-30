@@ -6,6 +6,7 @@ import Auth from "./components/Auth/Auth";
 import Profile from "./components/Profile/Profile";
 import Products from "./components/Products/Products";
 import ProductDetail from "./components/Products/ProductDetail/ProductDetail";
+import Cart from "./components/Cart/Cart";
 
 const routes = createBrowserRouter([
   {
@@ -31,6 +32,11 @@ const routes = createBrowserRouter([
   {
     path: "/products/:productName/:id",
     element: <ProductDetail />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/products/cart",
+    element: <Cart />,
     errorElement: <ErrorPage />,
   },
 

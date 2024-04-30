@@ -41,6 +41,16 @@ const ProductDetail = () => {
     }
   };
 
+  const addToCart = (product: any, amount: number) => {
+    const totalPrice = (product.price * amount).toFixed(2);
+    const productAdded = {
+      product: product,
+      amount: amount,
+      totalPrice: totalPrice,
+    };
+    console.log(productAdded);
+  };
+
   if (!product) {
     return <ProductNotFound />;
   }
@@ -79,7 +89,12 @@ const ProductDetail = () => {
             />
 
             <div className="w-64">
-              <ButtonInput text="Add to cart" type="button" grow />
+              <ButtonInput
+                text="Add to cart"
+                type="button"
+                grow
+                onClick={() => addToCart(product, amount)}
+              />
             </div>
           </section>
 

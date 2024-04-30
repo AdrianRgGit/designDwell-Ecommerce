@@ -27,7 +27,7 @@ const Header = () => {
       </section>
 
       <section className="flex items-center gap-x-8">
-        <a href="#">
+        <a href="/products/cart">
           <Briefcase className="transition-colors duration-200 hover:text-gold" />
         </a>
 

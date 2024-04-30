@@ -15,3 +15,11 @@ export interface ProductType {
 export interface ProductCardProps {
   products: ProductType[];
 }
+
+export interface AddProductToCartProps {
+  product: ProductType;
+}
+
+export interface CartStateType {
+  products: ProductType[];
+}
