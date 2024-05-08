@@ -1,18 +1,18 @@
-import ButtonInput from "../Inputs/ButtonInput/ButtonInput";
 import ButtonProfileInput from "../Inputs/ButtonProfileInput/ButtonProfileInput";
+import ProfileNav from "./ProfileNav/ProfileNav";
 
 const Profile = () => {
   return (
     <section className="mb-12 mt-20 space-y-12 p-8">
-      <article className="flex gap-x-4">
-        <ButtonInput text="PROFILE" type="button" />
-        <ButtonInput text="FAVORITES" type="button" />
-        <ButtonInput text="PURCHASES" type="button" />
-      </article>
+      <ProfileNav />
 
       <article>
-        <ButtonProfileInput text="ADDRESSES" type="button" first />
-        <ButtonProfileInput text="PAYMENTS" type="button" />
+        <a href="/profile/addresses">
+          <ButtonProfileInput text="ADDRESSES" type="button" first />
+        </a>
+        <a href="/profile/payments">
+          <ButtonProfileInput text="PAYMENTS" type="button" />
+        </a>
         <ButtonProfileInput
           text="EMAIL"
           type="button"

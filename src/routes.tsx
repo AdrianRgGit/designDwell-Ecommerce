@@ -7,6 +7,8 @@ import Profile from "./components/Profile/Profile";
 import Products from "./components/Products/Products";
 import ProductDetail from "./components/Products/ProductDetail/ProductDetail";
 import Cart from "./components/Cart/Cart";
+import Address from "./components/Profile/Addresses/Addresses";
+import Payment from "./components/Profile/Payments/Payments";
 
 const routes = createBrowserRouter([
   {
@@ -22,6 +24,16 @@ const routes = createBrowserRouter([
   {
     path: "/profile",
     element: <Profile />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/profile/addresses",
+    element: <Address />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/profile/payments",
+    element: <Payment />,
     errorElement: <ErrorPage />,
   },
   {
