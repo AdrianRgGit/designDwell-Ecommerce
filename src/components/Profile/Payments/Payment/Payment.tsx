@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Payment = () => {
   return (
     <article className="space-y-2 border-b pb-8 font-inter">
