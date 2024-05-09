@@ -5,7 +5,7 @@ import { ProductCardProps, ProductType } from "../../../types/productType";
 const ProductCard: FC<ProductCardProps> = ({ products }) => {
   const [isFavorite, setIsFavorite] = useState(false);
 
-  const handleFavorite = (product: ProductType) => {
+  const handleFavorite = () => {
     setIsFavorite(!isFavorite);
   };
 
@@ -46,7 +46,7 @@ const ProductCard: FC<ProductCardProps> = ({ products }) => {
               />
             ) : (
               <Heart
-                onClick={(product) => handleFavorite}
+                onClick={() => handleFavorite}
                 size={32}
                 className="absolute -top-1 left-10 z-10 cursor-pointer"
               />
