@@ -3,19 +3,25 @@ import { FC, useState } from "react";
 import { ProductCardProps, ProductType } from "../../../types/productType";
 
 const ProductCard: FC<ProductCardProps> = ({ products }) => {
-  const [isFavorite, setIsFavorite] = useState(false);
+  const [favorites, setFavorites] = useState<ProductType[]>([]);
 
-  const handleFavorite = () => {
-    setIsFavorite(!isFavorite);
+  const isFavorite = (product: ProductType) => {
+    return favorites.some((fav) => fav.id === product.id);
+  };
+
+  const addToFavorites = (product: ProductType) => {
+    if (isFavorite(product)) {
+      const updatedFavorites = favorites.filter((fav) => fav.id !== product.id);
+      setFavorites(updatedFavorites);
+    } else {
+      setFavorites([...favorites, product]);
+    }
   };
 
   return (
     <>
       {products.map((product: ProductType) => (
-        <article
-          key={product.id}
-          className="transform border-b transition-transform duration-300 hover:scale-105"
-        >
+        <article key={product.id} className="border-b">
           <a href={`/products/${product.name}/${product.id}`}>
             <img
               src={product.image}
@@ -32,25 +38,13 @@ const ProductCard: FC<ProductCardProps> = ({ products }) => {
             </div>
           </a>
           <div className="relative mb-10">
-            <Plus
+            <Heart
+              onClick={() => addToFavorites(product)}
               size={32}
-              className="absolute -top-1 left-0 z-10 cursor-pointer"
+              fill={isFavorite(product) ? "#FFC94A" : "none"}
+              stroke={isFavorite(product) ? "#FFC94A" : "black"}
+              className="absolute -top-2 right-5 z-10 cursor-pointer transition-colors duration-150"
             />
-
-            {isFavorite ? (
-              <Heart
-                onClick={() => handleFavorite}
-                size={32}
-                fill="red"
-                className="absolute -top-1 left-10 z-10 cursor-pointer"
-              />
-            ) : (
-              <Heart
-                onClick={() => handleFavorite}
-                size={32}
-                className="absolute -top-1 left-10 z-10 cursor-pointer"
-              />
-            )}
           </div>
         </article>
       ))}
