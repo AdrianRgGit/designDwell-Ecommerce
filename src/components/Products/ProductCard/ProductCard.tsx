@@ -1,8 +1,14 @@
 import { Heart, Plus } from "lucide-react";
-import { FC } from "react";
+import { FC, useState } from "react";
 import { ProductCardProps, ProductType } from "../../../types/productType";
 
 const ProductCard: FC<ProductCardProps> = ({ products }) => {
+  const [isFavorite, setIsFavorite] = useState(false);
+
+  const handleFavorite = (product: ProductType) => {
+    setIsFavorite(!isFavorite);
+  };
+
   return (
     <>
       {products.map((product: ProductType) => (
@@ -24,12 +30,28 @@ const ProductCard: FC<ProductCardProps> = ({ products }) => {
               <p>{product.category.join(", ")}</p>
               <p className="font-inter text-xl font-bold">{`${product.price.toFixed(2)}€`}</p>
             </div>
-
-            <div className="mb-2 flex items-center gap-x-6">
-              <Plus size={32} />
-              <Heart size={32} />
-            </div>
           </a>
+          <div className="relative mb-10">
+            <Plus
+              size={32}
+              className="absolute -top-1 left-0 z-10 cursor-pointer"
+            />
+
+            {isFavorite ? (
+              <Heart
+                onClick={() => handleFavorite}
+                size={32}
+                fill="red"
+                className="absolute -top-1 left-10 z-10 cursor-pointer"
+              />
+            ) : (
+              <Heart
+                onClick={(product) => handleFavorite}
+                size={32}
+                className="absolute -top-1 left-10 z-10 cursor-pointer"
+              />
+            )}
+          </div>
         </article>
       ))}
     </>
