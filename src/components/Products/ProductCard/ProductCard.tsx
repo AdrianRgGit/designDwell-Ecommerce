@@ -1,4 +1,4 @@
-import { Heart, Plus } from "lucide-react";
+import { Heart } from "lucide-react";
 import { FC, useState } from "react";
 import { ProductCardProps, ProductType } from "../../../types/productType";
 
@@ -9,12 +9,16 @@ const ProductCard: FC<ProductCardProps> = ({ products }) => {
     return favorites.some((fav) => fav.id === product.id);
   };
 
+  // NOTE: De momento lo dejo guardado en el localStorage. Lo haré con redux.
   const addToFavorites = (product: ProductType) => {
     if (isFavorite(product)) {
       const updatedFavorites = favorites.filter((fav) => fav.id !== product.id);
       setFavorites(updatedFavorites);
+      localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
     } else {
-      setFavorites([...favorites, product]);
+      const newFavorites = [...favorites, product];
+      setFavorites(newFavorites);
+      localStorage.setItem("favorites", JSON.stringify(newFavorites));
     }
   };
 
