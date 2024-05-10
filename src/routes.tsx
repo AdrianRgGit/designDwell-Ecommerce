@@ -9,6 +9,7 @@ import ProductDetail from "./components/Products/ProductDetail/ProductDetail";
 import Cart from "./components/Cart/Cart";
 import Address from "./components/Profile/Addresses/Addresses";
 import Payment from "./components/Profile/Payments/Payments";
+import Favorites from "./components/Favorites/Favorites";
 
 const routes = createBrowserRouter([
   {
@@ -49,6 +50,11 @@ const routes = createBrowserRouter([
   {
     path: "/products/cart",
     element: <Cart />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/favorites",
+    element: <Favorites />,
     errorElement: <ErrorPage />,
   },
 

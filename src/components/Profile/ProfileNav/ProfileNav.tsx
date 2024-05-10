@@ -6,7 +6,7 @@ const ProfileNav = () => {
       <a href="/profile">
         <ButtonInput text="PROFILE" type="button" />
       </a>
-      <a href="#">
+      <a href="/favorites">
         <ButtonInput text="FAVORITES" type="button" />
       </a>
       <a href="#">
